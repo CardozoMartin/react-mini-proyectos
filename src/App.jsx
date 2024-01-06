@@ -1,13 +1,14 @@
 
 import './App.css'
-import AppGift from './components/Gifts/AppGift'
+import FilterGift from './Views/FilterGift'
+
 
 function App() {
   
 
   return (
     <>
-     <AppGift/>
+     <FilterGift/>
     </>
   )
 }

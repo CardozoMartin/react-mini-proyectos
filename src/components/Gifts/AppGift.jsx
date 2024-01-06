@@ -7,7 +7,6 @@ const AppGift = () => {
     const [category, setCategory] = useState('')
   return (
     <>
-    <div>AppGift</div>
     <AddCategoty setCategory={setCategory}/>
     <GalleryGift category={category}/>
     </>

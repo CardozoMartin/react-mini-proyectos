@@ -9,14 +9,22 @@ const GalleryGift = ({ category }) => {
 
     const { loading, data } = useApi(url);
   return (
-    <div className='container-gifs'>
-    {
+   <div className='container-gifs container'>
+      <div className="row">
+       
+    { 
         loading ?
             data.map(img => (
+              <div key={img.id} className="col-xl-3 mb-4 col-md-6 mx-auto text-center mt-5 text-light">
+
                 <ImageItem key={img.id} title={img.title} url={img.images.downsized_medium.url} />
+              </div>
             ))
-        : ''
+        : 'Cargando...'
     }
+
+       
+      </div>
 </div>
   )
 }

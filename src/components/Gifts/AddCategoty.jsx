@@ -19,13 +19,17 @@ const AddCategoty = ( { setCategory }) => {
 }
 return ( 
   <>
+  <section className="container">
+
       <form onSubmit={ searchGif }>
           <input type="text" placeholder='Search...' 
               onChange={e => setValue(e.target.value)}
               value={value}
-          />
+              className="form-control form-control-user"
+              />
       </form>
-      { error ? <p className='error'>El campo no puede estar vacio...</p> : ""}
+      { error ? <p className='text-center alert alert-danger mt-3'>El campo no puede estar vacio...</p> : ""}
+              </section>
   </>
 );
 }
